@@ -1,0 +1,157 @@
+.screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: #abaaad;
+}
+
+#loginScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+}
+
+#loadingScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.windows-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AWindows_logo_-_2002%25E2%2580%25932012_%2528Black%2529.svg&psig=AOvVaw2AJkUHzFSHLdkzMMYpkeHa&ust=1700688769490000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjDrcKF1oIDFQAAAAAdAAAAABAE');
+    background-size: cover;
+}
+
+#loadingBar {
+    width: 0;
+    height: 20px;
+    background-color: rgb(34, 34, 37);
+    transition: width 2s;
+    margin-top: 20px;
+}
+
+#desktop {
+    background-size: cover;
+    background-position: center;
+}
+
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.toolbar .d-flex.align-items-center {
+    justify-content: space-around;
+}
+
+.toolbar i, .toolbar input[type="search"] {
+    margin-right: 15px;
+}
+
+#clock, #date {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.progress {
+    width: 50%; 
+    margin-bottom: 10px;
+}
+
+.progress-bar.bg-dark {
+    background-color: #000; 
+}
+
+.start-menu {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.start-menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.start-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.start-menu-item:hover {
+    background-color: #f2f2f2;
+}
+
+.folder {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fa-lg {
+    margin-right: 10px;
+}
+
+.img-thumbnail {
+    width: 50px;
+    height: 50px;
+}
+
+.windows-logo {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 10px;
+    margin-left: 140px;
+    margin-right: 230px;
+}
+.toolbar-button {
+    border: none;
+    background: none;
+    color: white;
+}
+
+.toolbar-button i {
+    font-size: 20px; 
+}
+.shutdown-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2000; 
+    
+}
